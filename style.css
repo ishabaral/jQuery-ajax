@@ -1,3 +1,42 @@
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    margin: 5px auto 25px;
+    background-color: cadetblue;
+    color: white;
+    position: relative;
+    left: 40%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+@media (max-width:800px) {
+    button{
+        left:25%;
+    }
+}
+
 table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td{
     border: 1px solid black;
 }
+
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+th{
+    font-size: 20px;
+}
+td{
+    font-size: 17px;
+}
+
