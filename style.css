@@ -9,7 +9,7 @@ button{
     background-color: cadetblue;
     color: white;
     position: relative;
-    left: 40%;
+    left: 35%;
     font-size: 20px;
     border: none;
     outline: none;
@@ -20,9 +20,21 @@ button{
     }
 }
 
+input{
+    position: relative;
+    left: 40%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: burlywood;
+    padding: 10px;
+    margin: 5px auto 25px;
+}
+
 table{
     border-collapse: collapse;
     width: 100%;
+    
 }
 
 table, th, td{
