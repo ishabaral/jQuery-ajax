@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("#load-data-button").after(searchBox);
         var table = $("<table></table>");
         $("input").after(table);
-        $("table").append('<tr><th> Id </th><th> UserId </th><th> Title </th><th> Body </th></tr>');
+        $("table").append('<thead><tr><th> Id </th><th> UserId </th><th> Title </th><th> Body </th></tr></thead>');
         
         $.get("https://jsonplaceholder.typicode.com/posts", (data, status)=>{
             for(let i=0; i< data.length; i++){
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         $("input").keyup(function () {
             var value = $(this).val().toLowerCase();
-            $("table tr").filter(function () {
+            $("tr").not('thead tr').filter(function () {
                 var tableTitle = $("tr:first-child");
                 $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1);
             })
