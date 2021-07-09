@@ -14,12 +14,6 @@ button{
     border: none;
     outline: none;
 }
-@media (max-width:800px) {
-    button{
-        left:25%;
-    }
-}
-
 input{
     position: relative;
     left: 40%;
@@ -30,7 +24,20 @@ input{
     padding: 10px;
     margin: 5px auto 25px;
 }
-
+@media (max-width:800px) {
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        left:25px;
+        margin-bottom: 5px;
+    }
+    input{
+        left:25px;
+        margin: 5px auto 10px;
+    }
+}
 table{
     border-collapse: collapse;
     width: 100%;
